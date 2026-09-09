@@ -1,0 +1,26 @@
+{
+  "name": "erlc-discord-bot",
+  "version": "1.0.0",
+  "description": "Production-ready ER:LC Discord bot with 75+ commands",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy": "ts-node src/deploy-commands.ts"
+  },
+  "keywords": ["discord", "bot", "erlc"],
+  "author": "TokaV1",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.3.1",
+    "sqlite3": "^5.1.6",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
+  }
+}
